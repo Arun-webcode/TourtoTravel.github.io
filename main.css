@@ -1,0 +1,109 @@
+/* Main container styles starts here */
+.rating-cards {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  top: -30px;
+}
+.card {
+  width: 180px;
+  height: 110px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  /* filter: drop-shadow(5px 5px 10px black); */
+  box-shadow: 0px 40px 70px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(38, 38, 38);
+}
+.card-text {
+  font-size: 14px;
+  color: gray;
+}
+
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.features h4 {
+  color: rgb(117, 116, 116);
+  font-size: 20px;
+}
+.features h1 {
+  font-weight: 900;
+  color: rgb(38, 38, 38);
+  margin-bottom: 25px;
+}
+.features-text-images {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.features-text {
+  width: 50%;
+  padding-left: 5%;
+}
+.feature-btn {
+  color: white;
+  background-color: #ff4f64;
+  width: 45px;
+  height: 27px;
+  border-radius: 20px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.features-text h4 {
+  font-weight: 700;
+  color: rgb(38, 38, 38);
+}
+.para {
+  color: rgb(87, 85, 85);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.features-images {
+  width: 50%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  /* margin-left: 5%; */
+  position: relative;
+  margin: 50px;
+}
+#f-image1 {
+  width: 45%;
+  height: 315px;
+  border-radius: 120px 120px 120px 0%;
+  border: 6px solid rgb(255, 255, 255);
+  position: absolute; /* Set position to absolute */
+  top: 1; /* Align it to the top of the parent container */
+  left: 0; /* Align it to the left of the parent container */
+  z-index: 2; /* Set a higher z-index to make it appear above #f-image2 */
+}
+
+#f-image2 {
+  width: 90%;
+  height: 450px;
+  border-radius: 50%;
+  margin: 0% 0% 0% 25%;
+  position: relative; /* Add position relative */
+  z-index: 1; /* Set a lower z-index */
+}

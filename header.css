@@ -38,6 +38,11 @@ header {
   margin: 0px 50px 0px 50px;
 }
 
+.fa-img {
+  font-size: 30px;
+  margin-right: 5px;
+}
+
 .navbar-box {
   display: flex;
   justify-content: space-evenly;
@@ -45,7 +50,7 @@ header {
   margin-top: 40px;
   width: 100%;
   /* padding: 0px 10px 0px 10px; */
-  z-index: 1000; /* Ensure navbar is above other elements */
+  z-index: 1; /* Ensure navbar is above other elements */
 }
 .inner-navbar {
   display: flex;
@@ -88,7 +93,6 @@ header {
   border-radius: 20px;
   background-color: #ff4f64;
   position: absolute;
-  /* overflow: visible; */
   transition: transform 0.3s;
 }
 .toggle-btn.active .toggle-circle {
@@ -103,7 +107,7 @@ header {
   transform: translate(-50%, -100%);
   text-align: center;
   color: white;
-  z-index: 2; /* Ensure the text is above the overlay and behind the carousel */
+  z-index: 2;
 }
 .centered-text h1 {
   font-weight: 900;
@@ -111,7 +115,7 @@ header {
 }
 .centered-text p {
   font-size: 15px;
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
 }
 .centered-box {
@@ -121,6 +125,7 @@ header {
   border-radius: 40px;
   top: 62%;
   left: 50%;
+  padding: 5px;
   color: black;
   display: flex;
   align-items: center;
@@ -130,15 +135,20 @@ header {
   background-color: white;
   z-index: 2;
 }
+.vertical-line {
+  width: 1.5px;
+  height: 40px;
+  background-color: black;
+}
 .centered-box span {
   display: flex;
   align-items: center;
-  margin-left: 35px;
+  margin: 25px;
 }
 
 .search-box-btn {
   height: 90%;
-  width: 25%;
+  width: 130px;
   border-radius: 50px;
   background-color: #ff4f64;
 }
@@ -155,4 +165,124 @@ header {
 }
 .home-imgs {
   filter: brightness(70%);
+}
+
+/*  Responsiveness starts here */
+@media (max-width: 1230px) {
+  .centered-box {
+    height: 60px;
+  }
+}
+@media (max-width: 1200px) {
+  .centered-box {
+    height: 55px;
+    padding: 5px 7px 5px 0px;
+  }
+  .vertical-line {
+    height: 28px;
+  }
+  .centered-box span {
+    margin: 18px;
+  }
+}
+@media (max-width: 1125px) {
+  .centered-box {
+    height: 50px;
+    padding: 2px 4px 2px 0px;
+  }
+  .centered-box span {
+    margin: 15px;
+  }
+  .centered-text p {
+    font-size: 13px;
+    max-width: 450px;
+  }
+  .centered-text h1 {
+    font-size: 40px;
+  }
+  .vertical-line {
+    height: 20px;
+    width: 1px;
+  }
+  #searchButton:before {
+    margin-right: 5px;
+  }
+  .res-font {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1050px) {
+  .centered-text h1 {
+    font-size: 30px;
+  }
+  .centered-text p {
+    font-size: 12px;
+    max-width: 400px;
+  }
+  .res-font {
+    font-size: 13px;
+  }
+}
+@media (max-width: 960px) {
+  .centered-box {
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+  .centered-box span {
+    margin: 7px;
+  }
+  .search-box-btn {
+    width: 48px;
+  }
+  .res-font {
+    font-size: 12.5px;
+  }
+  .logo {
+    margin: 0px 20px 0px 25px;
+  }
+}
+@media (max-width: 900px) {
+  .centered-box span {
+    margin: 5px;
+  }
+  .navbar-box {
+    margin-top: 25px;
+  }
+  .inner-navbar {
+    height: 30px;
+    font-size: 12px;
+  }
+  .inner-navbar div a:hover {
+    padding: 2px 5px 2px 5px;
+  }
+  .fa-img {
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  .logo_name {
+    font-size: 15px;
+  }
+  .toggle-btn {
+    width: 55px;
+    height: 30px;
+  }
+  .toggle-btn.active .toggle-circle {
+    transform: translateX(19px);
+  }
+  .toggle-circle {
+    width: 34px;
+    height: 30px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-btns {
+    height: 30px;
+    width: 70px;
+    font-size: 12px;
+  }
+  .res-font {
+    font-size: 12px;
+  }
 }

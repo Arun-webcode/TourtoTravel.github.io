@@ -14,3 +14,26 @@ owl.owlCarousel({
 function toggleButton(btn) {
   btn.classList.toggle("active");
 }
+
+// Search hutton text to icon change
+window.addEventListener("DOMContentLoaded", function () {
+  const searchButton = document.getElementById("searchButton");
+
+  // Check screen width on load
+  checkScreenWidth();
+
+  // Check screen width on resize
+  window.addEventListener("resize", checkScreenWidth);
+
+  function checkScreenWidth() {
+    // Get the screen width
+    const screenWidth = window.innerWidth;
+
+    // Set the button content based on screen width
+    if (screenWidth <= 1017) {
+      searchButton.innerHTML = '<i class="fas fa-search"></i>'; // Font Awesome search icon
+    } else {
+      searchButton.innerHTML = "Search";
+    }
+  }
+});

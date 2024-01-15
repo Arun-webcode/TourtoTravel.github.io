@@ -29,6 +29,7 @@ header {
   width: 100px;
   font-size: 14px;
   letter-spacing: 1px;
+  z-index: 1;
 }
 
 .logo {
@@ -63,6 +64,17 @@ header {
   letter-spacing: 1px;
   color: white;
   background-color: #ff4f64;
+}
+.menubar {
+  display: none;
+}
+.search-navbar {
+  display: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 0; /* Set a lower z-index for the carousel controls */
 }
 .inner-navbar div a:hover {
   font-weight: 700;
@@ -107,7 +119,7 @@ header {
   transform: translate(-50%, -100%);
   text-align: center;
   color: white;
-  z-index: 2;
+  z-index: 1;
 }
 .centered-text h1 {
   font-weight: 900;
@@ -133,7 +145,7 @@ header {
   transform: translate(-50%, -50%);
   text-align: center;
   background-color: white;
-  z-index: 2;
+  z-index: 1;
 }
 .vertical-line {
   width: 1.5px;
@@ -153,7 +165,7 @@ header {
   background-color: #ff4f64;
 }
 /* Adjust your existing .overlay class */
-.overlay {
+/* .overlay {
   content: "";
   position: absolute;
   top: 0;
@@ -162,7 +174,7 @@ header {
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
   z-index: 1;
-}
+} */
 .home-imgs {
   filter: brightness(70%);
 }
@@ -284,5 +296,52 @@ header {
   }
   .res-font {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 875px) {
+  #submit-search-btn {
+    background-color: #ff4f64;
+    color: white;
+    border-radius: 15px;
+    border: none;
+  }
+  #submit-search-btn:hover {
+    background-color: #c9273a;
+  }
+  .me-2 {
+    border-radius: 15px;
+  }
+  .d-flex {
+    height: 30px;
+  }
+  .menubar {
+    margin: 0px 25px 0px 20px;
+    border-radius: 20px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+  .sidebar {
+    z-index: 2;
+  }
+  .menubar:hover {
+    background-color: #c9273a;
+  }
+  .navbar-box {
+    justify-content: space-between;
+  }
+  .menubar,
+  .search-navbar {
+    display: flex;
+  }
+  #searchButton,
+  #inner-navbar {
+    display: none;
+  }
+  .toggle-btn,
+  .header-btns {
+    display: none;
   }
 }

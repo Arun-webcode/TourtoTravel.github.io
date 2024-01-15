@@ -15,7 +15,7 @@ function toggleButton(btn) {
   btn.classList.toggle("active");
 }
 
-// Search hutton text to icon change
+// Search button text to icon change
 window.addEventListener("DOMContentLoaded", function () {
   const searchButton = document.getElementById("searchButton");
 

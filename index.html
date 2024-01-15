@@ -58,8 +58,7 @@
             <i class="fa fa-globe fa-img"></i>
             <span class="logo_name">TourtoTravel</span>
           </div>
-
-          <nav class="inner-navbar">
+          <nav class="inner-navbar" id="inner-navbar">
             <div>
               <a class="navbar-brand" href="#">Home</a>
             </div>
@@ -75,6 +74,26 @@
             <div>
               <a class="navbar-brand" href="#">Client</a>
             </div>
+            <!-- <div>
+              <a id=" fas fa-search navbar-search-icon" href="#"></a>
+            </div> -->
+          </nav>
+          <nav class="search-navbar">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-success fas fa-search"
+                  id="submit-search-btn"
+                  type="submit"
+                ></button>
+              </form>
+            </div>
           </nav>
           <div style="display: flex; flex-direction: row">
             <div class="toggle-btn" onclick="toggleButton(this)">
@@ -83,6 +102,41 @@
             <button type="button" class="btn btn-danger header-btns">
               Login
             </button>
+
+            <!-- Add this button in your existing navbar -->
+            <button
+              style="background-color: #ff4f64"
+              class="btn btn-primary material-symbols-outlined menubar"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              menu
+            </button>
+
+            <!-- Add this offcanvas structure after your existing navbar -->
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div class="offcanvas-header sidebar">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                  Offcanvas right
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close sidebar"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body sidebar">
+                <!-- Add your offcanvas content here -->
+              </div>
+            </div>
           </div>
         </div>
 

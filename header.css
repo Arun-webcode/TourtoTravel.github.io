@@ -450,3 +450,20 @@ header {
     margin: 0px 6px 0px 5px;
   }
 }
+
+@media (max-width: 460px) {
+  .centered-text h1 {
+    font-size: 14px;
+  }
+  .centered-text p {
+    font-size: 5px;
+    max-width: 400px;
+  }
+  .centered-box {
+    height: 14px;
+    padding-left: 5px;
+  }
+  .centered-box span {
+    font-size: 7px;
+  }
+}

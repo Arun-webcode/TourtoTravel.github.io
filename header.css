@@ -381,7 +381,7 @@ header {
     font-size: 65%;
   }
   .navbar-box {
-    background-color: #ff4f64;
+    /* background-color: #ff4f64; */
     padding: 2px 0px 2px 0px;
     margin-top: 0px;
     opacity: 0.9;
@@ -465,5 +465,16 @@ header {
   }
   .centered-box span {
     font-size: 7px;
+  }
+}
+@media (max-width: 340px) {
+  .centered-text h1 {
+    font-size: 10px;
+  }
+  .centered-box {
+    height: 12px;
+  }
+  .centered-box span {
+    font-size: 6px;
   }
 }

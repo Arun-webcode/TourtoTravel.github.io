@@ -48,10 +48,10 @@ header {
   display: flex;
   justify-content: space-evenly;
   position: absolute;
+
   margin-top: 40px;
   width: 100%;
-  /* padding: 0px 10px 0px 10px; */
-  z-index: 1; /* Ensure navbar is above other elements */
+  z-index: 1;
 }
 .inner-navbar {
   display: flex;
@@ -332,6 +332,22 @@ header {
   .navbar-box {
     justify-content: space-between;
   }
+  .logo {
+    margin: 0px 20px 0px 25px;
+  }
+  .res-font {
+    font-size: 10px;
+  }
+  .centered-box {
+    padding-left: 10px;
+    height: 30px;
+  }
+  .centered-box span {
+    font-size: 20px;
+  }
+  .dropdown-toggle {
+    font-size: 65%;
+  }
   .menubar,
   .search-navbar {
     display: flex;
@@ -343,5 +359,94 @@ header {
   .toggle-btn,
   .header-btns {
     display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .centered-text h1 {
+    font-size: 18px;
+  }
+  .centered-text p {
+    font-size: 8px;
+    max-width: 400px;
+  }
+  .centered-box {
+    padding-left: 10px;
+    height: 30px;
+  }
+  .centered-box span {
+    font-size: 16px;
+  }
+  .dropdown-toggle {
+    font-size: 65%;
+  }
+  .navbar-box {
+    background-color: #ff4f64;
+    padding: 2px 0px 2px 0px;
+    margin-top: 0px;
+    opacity: 0.9;
+  }
+  .logo_name {
+    font-size: 10px;
+  }
+  .fa-img {
+    font-size: 17px;
+  }
+}
+@media (max-width: 590px) {
+  .centered-box {
+    height: 22px;
+    padding-left: 5px;
+  }
+  .centered-box span {
+    font-size: 13px;
+  }
+  .d-flex {
+    height: 25px;
+  }
+  .navbar-box {
+    align-items: center;
+  }
+  .menubar {
+    height: 25px;
+  }
+  .vertical-line {
+    height: 13px;
+    width: 0.8px;
+  }
+}
+
+@media (max-width: 490px) {
+  .centered-box {
+    height: 18px;
+    padding-left: 5px;
+  }
+  .centered-box span {
+    font-size: 12px;
+  }
+  .d-flex {
+    height: 18px;
+  }
+  .me-2 {
+    font-size: 10px;
+  }
+  .fa-search {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .menubar {
+    height: 18px;
+    padding: 0px 7px;
+  }
+  .vertical-line {
+    height: 13px;
+    width: 0.8px;
+  }
+  .logo {
+    margin: 0px 5px 0px 6px;
+  }
+  .menubar {
+    margin: 0px 6px 0px 5px;
   }
 }

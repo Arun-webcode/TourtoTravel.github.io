@@ -231,4 +231,12 @@ footer .bottom-details .bottom_text {
   footer .content .link-boxes .input-box {
     width: 100%;
   }
+  .logo-details {
+    display: flex;
+    align-items: center;
+  }
+  .fa-globe {
+    margin-right: 4px;
+    font-size: 17px;
+  }
 }

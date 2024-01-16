@@ -178,4 +178,55 @@
   .features-images {
     display: none;
   }
+  .rating-cards {
+    top: -25px;
+  }
+  .card {
+    width: 100px;
+    height: 60px;
+    border-radius: 15px;
+  }
+
+  .card-title {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+  .card-text {
+    font-size: 7px;
+  }
+  .material-symbols-outlined {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 490px) {
+  .rating-cards {
+    top: -15px;
+  }
+  .card {
+    width: 65px;
+    height: 35px;
+    border-radius: 10px;
+  }
+
+  .card-title {
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+  .card-text {
+    font-size: 5px;
+  }
+  .material-symbols-outlined {
+    font-size: 8px;
+  }
+  .features {
+    margin-top: 25px;
+  }
+  .features h4 {
+    font-size: 14px;
+  }
+  .features h1 {
+    font-weight: 500;
+    margin-bottom: 1px;
+  }
 }
